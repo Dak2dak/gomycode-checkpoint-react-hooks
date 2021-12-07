@@ -23,7 +23,7 @@ const SearchBar = () => {
 
 
 
-export default function index(props) {
+export default function Index(props) {
     return (
         <>
             <Container>

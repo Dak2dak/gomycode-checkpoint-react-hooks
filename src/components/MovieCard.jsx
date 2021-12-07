@@ -1,17 +1,14 @@
 import React from "react";
-import {FaPlay} from 'react-icons/fa';
 
 
 function MovieCard (props) {
 
     return (
-        <div className="container mt-8">
+        <div className="container container-border mt-8">
 			<div className="card movie_card">
-                {/* <img src="" className="card-img-top" alt="..."/> */}
                 <div class="card-body">
-
-                    <i class="fas fa-play play_button" data-toggle="tooltip" 
-                    data-placement="bottom" title="Play Trailer"></i>
+                    <iframe src = {props.movie.posterURL} frameBorder="2" 
+                    title="movie" width = "225" />
 
                     <h5 className="card-title">
                         {props.movie.title}

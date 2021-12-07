@@ -3,3 +3,20 @@
 .rating-input{
     display: none;
 }
+
+.rate {
+    margin-left: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.container-border {
+    border: solid orange;
+}
+
+.card-title {
+    color: green;
+}
+
+.card-description {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
