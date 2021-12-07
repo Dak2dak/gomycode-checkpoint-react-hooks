@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import StarRating from './components/StarRating';
 import { Container } from 'react-bootstrap';
 import MovieList from './components/MovieList';
+import Index from './components/Index';
 
 
 function App() {
@@ -47,9 +48,13 @@ function App() {
     setMovies(newMoviesList)
   }
 
+
+  
+
   return (
-    <div className="App">
+    <div className="App"> 
         <Container>
+              <Index />
               <MovieList movies = {movies} add = {add} />
         </Container>
     </div>
