@@ -8,13 +8,7 @@ function MovieList (props) {
     return (
         <>
             <Container>
-                <Row>
-                    {movies.map( movie => (
-                        <Col sm={12} md={6} lg={3}>
-                            <MovieCard movie = {movie} add = {add}/>
-                        </Col>
-                    ))}
-                </Row>
+                <Row></Row>
             </Container>
         </>
     );

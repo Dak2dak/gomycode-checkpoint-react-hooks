@@ -41,32 +41,23 @@ function App() {
 
   const [movies, setMovies] = useState(movielist);
 
-  const add = (movie) => {
-    const {id} = movie;
-    movie.add = true;
-    const newMoviesList = movies.filter((movie) => movie.id !== id);
-    newMoviesList.push(movie);
-    setMovies(newMoviesList)
-  }
 
   const [filter, setFilter] = useState("")
+
   const handleSearch = (e) => {
     setFilter(e.target.value)
   };
   
-  
-
   return (
     <div className="App"> 
         <Container>
               <Filter handleSearchMovie = {handleSearch} />
-              <MovieList movies = {movies} add = {add} />
+              <MovieList movies = {movies} />
               {movies
-              .filter((movie) =>
+                .filter((movie) =>
                 movie.title.toLowerCase().includes(filter.toLocaleLowerCase()))
                 .sort((a, b) => b.id - a.id)
-                .map((movie) => (
-                <MovieCard movie={movie} key={movie.id} />))}
+                .map((movie) => ( <MovieCard movie={movie} key={movie.id} />))}
         </Container>
     </div>
   );
