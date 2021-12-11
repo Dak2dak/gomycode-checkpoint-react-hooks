@@ -4,7 +4,7 @@ import { Row, Col, Container } from "react-bootstrap";
 
 function MovieList (props) {
 
-        const {movies, add} = props;
+    const {movies, add} = props;
     return (
         <>
             <Container>
