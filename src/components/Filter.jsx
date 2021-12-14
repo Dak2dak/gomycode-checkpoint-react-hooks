@@ -10,12 +10,12 @@ export default function Filter({handleSearchMovie}) {
             <div className="searchbar m-6" style={{ width: "450px", marginLeft: "20px" }}>
                 <Form className="d-flex">
                     <FormControl
-                    type="search"
-                    placeholder="Search for a movie"
-                    className="me-2"
-                    aria-label="Search"
-                    style={{ backgroundColor: "#040484", color: "#fff" }}
-                    onChange={(e) => handleSearchMovie}
+                        type="search"
+                        placeholder="Search for a movie"
+                        className="me-2"
+                        aria-label="Search"
+                        style={{ backgroundColor: "#040484", color: "#fff" }}
+                        onChange={(e) => handleSearchMovie}
                     />
                     <Button
                     variant="outline-success"
